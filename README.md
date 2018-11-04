@@ -57,7 +57,7 @@
     （这个推荐会linux的同学看，当然谁都可以看啦）
 
     [CSDN上的GitHub入门](https://blog.csdn.net/qq_35246620/article/details/66973794)
-    （这个呢，不会linux的可以看哦，讲的很浅显易懂）
+    （这个呢，不会linux的可以看哦，讲的很浅显易懂）
 
     [GitHub官方教程](https://guides.github.com/activities/hello-world/)
     （全英文，但是也好懂）

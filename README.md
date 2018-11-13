@@ -62,3 +62,6 @@
 
     [GitHub官方教程](https://guides.github.com/activities/hello-world/)
     （全英文，但是也好懂）
+    
+    [如何创建一个pull request](https://github.com/geeeeeeeeek/git-recipes/wiki/3.3-%E5%88%9B%E5%BB%BA-Pull-Request)
+    

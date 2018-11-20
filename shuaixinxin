@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main (int argc, const char * argv[])
+{char c;
+    int number;
+    cin >>number ;
+    while ((c=getchar())!='\n')
+    {if((c >='a' && c<='z') || (c>='A' && c <='z'))
+       {c=c+number;
+           if (c>'z' && c<='z'+4) c=c-26;
+       }
+        cout <<c;
+    }
+    cout<<endl;
+    return 0;
+}

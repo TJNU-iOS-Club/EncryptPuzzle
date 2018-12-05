@@ -1,8 +1,8 @@
 //
-//  main.cpp
-//  ios_club_1
+//  jiyaxin.cpp
+//  jiyaxin
 //
-//  Created by 鑫鑫之火 on 2018/12/3.
+//  Created by 鑫鑫之火 on 2018/11/17.
 //  Copyright © 2018年 鑫鑫之火. All rights reserved.
 //
 
@@ -21,18 +21,33 @@ int main()
     cout << "输出译码" << endl;
     for(i = 0 ; i < Z.length() ; i++)
     {
-        if((Z[i]+n)>'z'&&Z[i]>='a')     Z[i]=96+((((Z[i]+n)-'z')%26));
-        if((Z[i]+n)>'a'&&(Z[i]+n)<='z'&&Z[i]>='a')   Z[i]=Z[i]+n;
-        if((Z[i]+n)>'Z'&&Z[i]<='Z')       Z[i]=64+((((Z[i]+n)-'Z')%26));
-        if((Z[i]+n)>'A'&&(Z[i]+n)<='Z'&&Z[i]<='Z')   Z[i]=Z[i]+n;
+        if((Z[i]>=65&&Z[i]<=90)||(Z[i]>=97&&Z[i]<=122))
+        {
+            if((Z[i]+n)>'Z')
+            {
+                if (Z[i]>='a')
+                {
+                    if ((Z[i]+n)>'z')
+                    {
+                        if( (((Z[i]+n)-'z')%26==0))
+                        {
+                            Z[i]='z';
+                        }
+                        else Z[i]=(96+((((Z[i]+n)-'z')%26)));
+                    }
+                    else Z[i]=(Z[i]+n);
+                }
+                else   if((((Z[i]+n)-'Z')%26==0))
+                {
+                    Z[i]='Z';
+                }
+                else  Z[i]=(64+((((Z[i]+n)-'Z')%26)));
+            }
+            else Z[i]=Z[i]+n;
+        }
+        else Z[i]=Z[i];
     }
     
-    for(i = 0 ; i<= Z.length() ; i++)
-    {
-        cout << Z[i];
-    }
-    cout << endl;
+    cout <<Z<< endl;
     return 0;
 }
-
-
